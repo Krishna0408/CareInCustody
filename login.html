@@ -1,0 +1,96 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="icon" href="images/C-icon.png">
+  <link rel="shortcut icon" href="images/C-icon.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('assets/imgs/3.avif'); 
+      
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 150px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+    
+    .form-group button {
+      padding: 10px;
+      background-color: #4caf50;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 3px;
+      font-size: 16px;
+      width: 100%;
+    }
+    
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+    
+    h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 24px;
+    }
+    
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 20px 0;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" placeholder="Enter your password" required>
+      </div>
+      <div class="form-group">
+        <button onclick="login()">Login</button>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+  </html>
+  
